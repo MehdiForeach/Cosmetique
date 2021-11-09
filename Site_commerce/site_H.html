@@ -205,11 +205,11 @@
         <div class="row footer mx-5 my-5">
 
             <div class="m-3">
-                <input type="email" name="mail" required placeholder="Adresse mail" class="inputMail" id="mail">
+                <input type="email" name="mail" onchange="verifMail()" required placeholder="Adresse mail" class="inputMail" id="mail">
             </div>
             
             <form method="post" action="mail.php">
-                <textarea rows="4" id="message" placeholder="Message" required cols="50" name="message" form="usrform"></textarea>
+                <textarea rows="4" id="message" placeholder="Message"  onchange="verifMail()" required cols="50" name="message" form="usrform"></textarea>
                 <div id="erreur"></div>
                 <button type="submit" id="btOK">VALIDER</button>
             </form>

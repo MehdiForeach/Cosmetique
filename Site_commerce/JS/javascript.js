@@ -18,9 +18,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.getElementById("btOK").disabled = true;
 });
 
-function verifMail() {
+function cyclVerif() {
 
-  setTimeout(verifMail, 500);
+  setTimeout(cyclVerif, 500);
+
+  if (mail && mess)
+    document.getElementById("btOK").disabled = false;
+  else document.getElementById("btOK").disabled = true;
+}
+
+cyclVerif();
+
+function verifMail() {
 
   let saisie = document.getElementById("mail").value;
   let msg = document.getElementById('message').value;
@@ -44,12 +53,7 @@ function verifMail() {
   }
   else mess = true;
 
-  if (mail && mess)
-    document.getElementById("btOK").disabled = false;
-  else document.getElementById("btOK").disabled = true;
 }
-
-verifMail();
 
 function effaceMessage() {
   document.getElementById("erreur").innerHTML = "";
