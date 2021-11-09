@@ -1,1 +1,1 @@
-# Cosm-tique
+# Cosmetique
