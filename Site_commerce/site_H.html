@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cosmétique</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, Users-scalable-no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="JS/javascript.js"></script>
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8184xsTC2SUGfDpp6KHpBTgZ8DLjm0eLlzQ&usqp=CAU">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles/site_H.css">
+</head>
+
+<body>
+    <div class="container mx-auto">
+
+        <div onclick="refresh()" class="row monHeader">
+            <h1 class="col-12 mb-3">Produits Cosmétique Bio</h1>
+        </div>
+
+        <!--<div class="row">
+            <div class="col-12 maNavbar justify-content-between">
+                <ul class="maListe">
+                    <li>
+                        <a class="boutonNav boutonNav1" href="site_H.html">Accueil</a>
+                    </li>
+                    <li class="cart">
+                        <button class="boutonNav boutonNav1">Présentation des produits</button>
+                        <div id="sidebar">
+                            <button class="boutonAjax boutonAjax1" type="button"
+                            onclick="loadPage( 'accueil.html' )">...</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="boutonNav boutonNav1" href="site_H.html">Produits</a>
+                    </li>
+                    <li>
+                        <a class="boutonNav boutonNav1" href="https://www.facebook.com/">Recettes des produits</a>
+                    </li>
+                </ul>
+            </div>
+        </div>-->
+
+        <div class="row mt-3 p-1">
+            <h3>Vente en ligne de produits cosmétique Bio, recettes, conseils, etc...</h3>
+            <button class="boutonAjax1 boutonAjax" onclick="refresh()">Accueil</button>
+        </div>
+        
+        <div class="row mt-3 justify-content-between">
+
+            <!--<div class="col-lg-3 col-md-2 d-none d-sm-block side pb-3">
+
+                <div class="vignette mt-3">
+                    <h2 class="mb-0">Produit</h2>
+                    <div class="fakeimg text-center">
+                        <img class="w-10 cadre col-lg-10 monImageV"
+                            src="https://cdn.acteurdurable.org/wp-content/uploads/2018/09/biologiques-produits.jpg"
+                            alt="produits">
+                    </div>
+                </div>
+
+                <div class="vignette mt-3">
+                    <h2 class="mb-0">Soin</h2>
+                    <div class="fakeimg  text-center">
+                        <a
+                            href="https://www.femmeactuelle.fr/beaute/soins-beaute/vrai-faux-sur-les-cosmetiques-biologiques-2060053">
+                            <img class="w-10 cadre col-lg-10 monImageV"
+                                src="https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FFAC.2Fvar.2Ffemmeactuelle.2Fstorage.2Fimages.2Fbeaute.2Fsoins-beaute.2Fproduits-de-beaute-bio.2Fvrai-faux-sur-les-cosmetiques-biologiques-48129.2F14890683-2-fre-FR.2F5-vrai-faux-sur-les-cosmetiques-biologiques.2Ejpg/850x478/quality/90/crop-from/center/10-vrai-faux-sur-les-cosmetiques-bio.jpeg"
+                                alt="soins">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="vignette mt-3">
+                    <h2 class="mb-0">huile d'argan</h2>
+                    <div class="fakeimg  text-center">
+                        <a
+                            href="https://www.aroma-zone.com/info/recette-cosmetique/elixir-jeunesse-aux-huiles-precieuses">
+                            <img class="w-10 cadre col-lg-10 monImageV"
+                                src="https://cdn.aroma-zone.com/cms/sites/default/files/imagecache/preset-recette-detail/Recette_cosmetique/O1520418_Elixir-jeunesse-huiles_web.jpg"
+                                alt="huile d'argan">
+                        </a>
+                    </div>
+                </div>
+            </div>-->
+
+            <div id="contenu" class="main p-4">
+
+                <div class="row text-center justify-content-around">
+
+                    <div class="col-3">
+                        <div onclick="loadPage( 'huiles_T.html' )" class="mes_Boutons">
+                            <img class="img_vignette"
+                                src="https://www.papillesetpupilles.fr/wp-content/uploads/2019/07/Huiles-ve%CC%81ge%CC%81tales-%C2%A9De-Alexander-Prokopenko-shutterstock.jpg"
+                                alt="gommage">
+                            <div class="card-body">
+                                <p>Huiles végétales Bio<br>Cliquez pour en savoir plus</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div onclick="loadPage( 'huiles_T.html' )" class="mes_Boutons">
+                            <div>
+                                <img class="img_vignette"
+                                    src="https://asset-a.grid.id/crop/0x0:0x0/345x242/photo/2018/10/25/1172520957.jpg"
+                                    alt="gommage">
+                                <div class="card-body">
+                                    <p>Visage<br>Cliquez pour en savoir plus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div onclick="loadPage( 'huiles_T.html' )" class="mes_Boutons">
+                            <div>
+                                <img class="img_vignette"
+                                    src="https://media.coiffea.com/blog/uploads/2019/04/shiny-hair.jpg" alt="gommage">
+                                <div class="card-body">
+                                    <p>Cheveux<br>Cliquez pour en savoir plus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 text-center justify-content-around">
+
+                    <div class="col-3">
+                        <div onclick="loadPage( 'huiles_T.html' )" class="mes_Boutons">
+                            <div>
+                                <img class="img_vignette"
+                                    src="https://www.institut-maya.fr/2018/wp-content/uploads/2018/10/Soins-corps-Toulouse-Gommage-corps-envelopement-corps-800x400.jpg"
+                                    alt="gommage">
+                                <div class="card-body">
+                                    <p>Corps<br>Cliquez pour en savoir plus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div onclick="loadPage( 'huiles_T.html' )" class="mes_Boutons">
+                            <div>
+                                <img class="img_vignette"
+                                    src="https://www.institut-swanoa.com/wp-content/uploads/2018/11/soin-des-mains.jpg"
+                                    alt="gommage">
+                                <div class="card-body">
+                                    <p>Mains<br>Cliquez pour en savoir plus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div onclick="loadPage( 'huiles_T.html' )" class="mes_Boutons">
+                            <div>
+                                <img class="img_vignette"
+                                    src="https://cache.cosmopolitan.fr/data/photo/w1000_ci/4z/pied-femme-vernis-soin.webp"
+                                    alt="gommage">
+                                <div class="card-body">
+                                    <p>Pieds<br>Cliquez pour en savoir plus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-4 text-center justify-content-around">
+
+                    <div class="col-3">
+                        <div onclick="loadPage( 'recettes.html' )" class="mes_Boutons">
+                            <div>
+                                <img class="img_vignette"
+                                    src="https://www.smartbox.com/blog/wp-content/uploads/2020/02/Recette-cosm%C3%A9tique-maison-1024x682.jpg"
+                                    alt="gommage">
+                                <div class="card-body">
+                                    <p>Recettes<br>Cliquez pour en savoir plus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--feeder-->
+        <div class="row footer mx-5 my-5">
+
+            <div class="m-3">
+                <input type="email" name="mail" required placeholder="Adresse mail" class="inputMail" id="mail">
+            </div>
+            
+            <form method="post" action="mail.php">
+                <textarea rows="4" id="message" placeholder="Message" required cols="50" name="message" form="usrform"></textarea>
+                <div id="erreur"></div>
+                <button type="submit" id="btOK">VALIDER</button>
+            </form>
+ 
+        </div>
+
+    </div>
+</body>
+</html>
