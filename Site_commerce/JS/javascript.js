@@ -38,8 +38,8 @@ function verifMail() {
 
   let mailAro = saisie.split('@');
   let mailPoint = saisie.split('.');
-  let mail = false;
-  let mess = false;
+  var mail = false;
+  var mess = false;
 
   if (mailAro.length != 2 || mailPoint.length != 2 || mailAro[0] == "" || mailPoint[0] == "" || mailAro[1] == "" || mailPoint[1] == "") {
     message("Adresse mail incorrect");
