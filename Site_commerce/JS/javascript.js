@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.getElementById("btOK").disabled = true;
 });
 
+var mail = false;
+var mess = false;
+
 function cyclVerif() {
 
   setTimeout(cyclVerif, 500);
@@ -38,8 +41,6 @@ function verifMail() {
 
   let mailAro = saisie.split('@');
   let mailPoint = saisie.split('.');
-  var mail = false;
-  var mess = false;
 
   if (mailAro.length != 2 || mailPoint.length != 2 || mailAro[0] == "" || mailPoint[0] == "" || mailAro[1] == "" || mailPoint[1] == "") {
     message("Adresse mail incorrect");
